@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #5e63ba;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 10px;
+  width: 60vw;
+  z-index: 0;
+}
+
+.images_container {
+  text-align: center;
+}
+
+.game_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.ans {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.hint {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.guesses_count {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  background-color: #5e63ba;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0.1rem;
+  cursor: pointer;
+}
+
+.wordIndex {
+  margin: 0 0.2rem;
+  padding: 0.3rem;
+  border-bottom: 3px solid black;
+}
+
+.wordIndex.hideWord {
+  border-bottom: none;
+  /* display: none; */
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .images_container img {
+    height: 150px;
+  }
+
+  .images_container h2 {
+    /* height: 150px; */
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .game_container {
+    padding: 1rem;
+  }
+
+  .ans {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+}
+
+.modal {
+  position: absolute;
+  background-color: white;
+  padding: 4rem;
+  width: 30vw;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: ; */
+  visibility: hidden;
+}
+
+.play_again_btn {
+  background-color: #5e63ba;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.295);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.modal.showMadal,
+.overlay.showMadal {
+  /* display: block; */
+  visibility: visible;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="images_container">
+        <img src="/images/hangman-0.svg" alt="hangman image" />
+
+        <h2>Hanging Man</h2>
+      </section>
+
+      <section class="game_container">
+        <div class="ans"></div>
+
+        <div class="hint">
+          Hint: A rhythmic movement of the body often performed to music.
+        </div>
+
+        <div class="guesses_count">
+          Incorrect guesses : <span class="Incorrect_no"> 0 </span> / 6
+        </div>
+
+        <div class="buttons"></div>
+      </section>
+    </main>
+    <div class="modal">
+      <!-- <button>X</button> -->
+      <div class="modal_container">
+        <p class="modal_text">Yes you Loose !</p>
+
+        <button class="play_again_btn">Play Again</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>
